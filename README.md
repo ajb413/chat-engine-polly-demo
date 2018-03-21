@@ -23,4 +23,4 @@ Uncomment under the `UNCOMMENT` lines in `app.js` to see ChatEngine features lik
 * Typing Indicator Plugin 
 * Markdown Plugin
 
-![App Screenshot](https://github.com/ajb413/chat-engine-polly-demo/master/screenshot.png "ChatEngine Demo")
+![App Screenshot](https://github.com/ajb413/chat-engine-polly-demo/raw/master/screenshot.png "ChatEngine Demo")
