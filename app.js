@@ -69,7 +69,7 @@ var app = {
         }, {
             // this can make your broswer slooow
             debug: true,
-            globalChannel: 'chat-engine-desktop-demo1'
+            globalChannel: 'chat-engine-desktop-demo'
         });
 
         let newPerson = generatePerson(true);
