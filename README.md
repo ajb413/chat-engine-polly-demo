@@ -3,9 +3,9 @@
 ## Instructions
 * Sign up for PubNub
 * Sign up for Amazon AWS
-* Run ![ChatEngine Setup](https://www.pubnub.com/docs/chat-engine/getting-started#automagic-pubnub-setup)
-* Get AWS `access` and `secret` keys for Polly guide ![here](https://docs.aws.amazon.com/polly/latest/dg/authentication-and-access-control.html)
-* Go to the PubNub Functions event handlers in the ![admin portal](https://admin.pubnub.com/)
+* Run [ChatEngine Setup](https://www.pubnub.com/docs/chat-engine/getting-started#automagic-pubnub-setup)
+* Get AWS `access` and `secret` keys for Polly guide [here](https://docs.aws.amazon.com/polly/latest/dg/authentication-and-access-control.html)
+* Go to the PubNub Functions event handlers in the [admin portal](https://admin.pubnub.com/)
 * Add an `On Request` event handler (+ tab) and paste `polly-pfunc.js` contents into the editor
 * To the left of the editor, click `MY SECRETS` and add `AWS_access_key` and `AWS_access_key`
 * Click `COPY URL` and paste it in `app.js` as `pollyFunctionURI` variable
