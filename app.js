@@ -1,4 +1,5 @@
-// Be sure to replace empty strings with your own App's Publish & Subscribe keys
+// Be sure to replace strings with your own App's Publish & Subscribe keys
+// Also replace the REST endpoint with your own On Request handler
 let userPubKey = '__PUBNUB_PUBLISH_KEY__';
 let userSubKey = '__PUBNUB_SUBSCRIBE_KEY__';
 let pollyFunctionURI = 'https://pubsub.pubnub.com/v1/blocks/sub-key/__SUB_KEY__/__URI__';
