@@ -69,7 +69,7 @@ var app = {
         }, {
             // this can make your broswer slooow
             debug: true,
-            globalChannel: 'chat-engine-desktop-demo'
+            globalChannel: 'chat-engine-adamb-test-38hvd62b6sfa'
         });
 
         let newPerson = generatePerson(true);
@@ -105,25 +105,25 @@ var app = {
 
         // UNCOMMENT code below to enbale the 'markdown-plugin'
         // also the `.plugin(markdown);` line chained to `this.chat.search`
-        // const markdown = ChatEngineCore.plugin['chat-engine-markdown']();
-        // this.chat.plugin(markdown);
+        const markdown = ChatEngineCore.plugin['chat-engine-markdown']();
+        this.chat.plugin(markdown);
 
         // UNCOMMENT code below to leverage PubNub's MSG History feature
-        // this.chat.on('$.connected', () => {
+        this.chat.on('$.connected', () => {
         
-        //     // search for 6 old `message` events
-        //     this.chat.search({
-        //         'reverse': true,
-        //         event: 'message',
-        //         limit: 6
-        //     }).on('message', (data) => {
-        //       // when messages are returned, render them like normal messages
-        //       app.renderMessage(data, true);
+            // search for 6 old `message` events
+            this.chat.search({
+                'reverse': true,
+                event: 'message',
+                limit: 6
+            }).on('message', (data) => {
+              // when messages are returned, render them like normal messages
+              app.renderMessage(data, true);
         
-        //     })
-        //     // .plugin(markdown);
+            })
+            .plugin(markdown);
         
-        // });
+        });
 
         this.bindEvents();
 
@@ -159,10 +159,10 @@ var app = {
 
         // UNCOMMENT the code below to leverage PubNub's Presence feature
         // when a user comes online, render them in the online list
-        // this.chat.on('$.online.*', function(data) {
-        //     app.users.unshift(data.user);
-        //     app.renderUsers();
-        // });
+        this.chat.on('$.online.*', function(data) {
+            app.users.unshift(data.user);
+            app.renderUsers();
+        });
         
         // when a user goes offline, remove them from the online list
         this.chat.on('$.offline.*', function(data) {
