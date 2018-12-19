@@ -1,4 +1,7 @@
-# PubNub ChatEngine Demo with AWS Polly for Text-To-Speech buttons
+# PubNub ChatEngine : AWS Polly : Text-To-Speech buttons
+
+## Full Tutorial
+[Amazon Machine Learning Blog - Build smart chat apps with Amazon machine learning APIs and the PubNub ChatEngine](https://aws.amazon.com/blogs/machine-learning/build-smart-chat-apps-with-amazon-machine-learning-apis-and-the-pubnub-chatengine/)
 
 ## Instructions
 * Sign up for PubNub
